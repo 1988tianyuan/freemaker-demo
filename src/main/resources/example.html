@@ -1,0 +1,7 @@
+$loadBalancerAddress
+$loadBalancerName
+#foreach( $rule in $loadBalancerRuleList )
+$rule.protocol
+$rule.serverPort
+$rule.loadBalancerPort
+#end

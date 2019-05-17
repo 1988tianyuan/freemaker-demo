@@ -1,0 +1,69 @@
+{
+  "nrn": "nrn:PUB:IAM::2979:Policy/808bd9c0-784b-11e9-86c0-6ebc22e4ce56",
+  "resourceDataVersion": "1.0.0",
+  "requestType": "CREATE",
+  "eventTime": 1558060128000,
+  "resourceName": "HUYUANYUAN_POLICY",
+  "action": "createPolicy",
+  "actionResultType": "SUCCESS",
+  "productDataStatus": "NOML",
+  "sourceType": "CONSOLE",
+  "sourceIp": "10.34.135.147",
+  "productData": {
+    "policyName": "HUYUANYUAN_POLICY",
+    "createTime": 1558060128000,
+    "permissions": [
+      {
+        "effect": "Allow",
+        "targets": [
+          {
+            "actionNrns": ["nrn:Server:::View/getServerInstancesList"],
+            "product": "Server",
+            "resourceNrns": ["nrn:Server:*:*:*"],
+            "resources": [{ "mbrNo": "*", "resource": "*", "region": "*" }],
+            "actions": ["View/getServerInstancesList"]
+          },
+          {
+            "actionNrns": ["nrn:Console:::ProductAccess"],
+            "product": "Console",
+            "resourceNrns": ["nrn:Console:*:*:Server"],
+            "resources": [
+              { "mbrNo": "*", "resource": "Server", "region": "*" }
+            ],
+            "actions": ["ProductAccess"]
+          }
+        ],
+        "products": ["Server", "Console"]
+      }
+    ],
+    "displayYn": "Y",
+    "policyNo": "808bd9c0-784b-11e9-86c0-6ebc22e4ce56",
+    "permission": {
+      "effect": "Allow",
+      "targets": [
+        {
+          "actionNrns": ["nrn:Server:::View/getServerInstancesList"],
+          "product": "Server",
+          "resourceNrns": ["nrn:Server:*:*:*"],
+          "resources": [{ "mbrNo": "*", "resource": "*", "region": "*" }],
+          "actions": ["View/getServerInstancesList"]
+        },
+        {
+          "actionNrns": ["nrn:Console:::ProductAccess"],
+          "product": "Console",
+          "resourceNrns": ["nrn:Console:*:*:Server"],
+          "resources": [{ "mbrNo": "*", "resource": "Server", "region": "*" }],
+          "actions": ["ProductAccess"]
+        }
+      ],
+      "products": ["Server", "Console"]
+    },
+    "type": "USER_CREATED"
+  },
+  "createTime": 1558060128856,
+  "memberNo": 2979,
+  "resourceType": "Policy",
+  "resourceId": "808bd9c0-784b-11e9-86c0-6ebc22e4ce56",
+  "productName": "IAM",
+  "resourceUpdateTime": 1558060128856
+}
