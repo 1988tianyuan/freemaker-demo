@@ -17,14 +17,14 @@
         "effect": "Allow",
         "targets": [
           {
-            "actionNrns": ["nrn:Server:::View/getServerInstancesList"],
+            "actionNrns": ["nrn:Server:::View/getServerInstancesList", "nrn:Server:::View/getServerInstancesList2"],
             "product": "Server",
             "resourceNrns": ["nrn:Server:*:*:*"],
             "resources": [{ "mbrNo": "*", "resource": "*", "region": "*" }],
             "actions": ["View/getServerInstancesList"]
           },
           {
-            "actionNrns": ["nrn:Console:::ProductAccess"],
+            "actionNrns": ["nrn:Console:::ProductAccess", "nrn:Console:::ProductAccess2"],
             "product": "Console",
             "resourceNrns": ["nrn:Console:*:*:Server"],
             "resources": [
@@ -42,14 +42,14 @@
       "effect": "Allow",
       "targets": [
         {
-          "actionNrns": ["nrn:Server:::View/getServerInstancesList"],
+          "actionNrns": ["nrn:Server:::View/getServerInstancesList", "nrn:Server:::View/getServerInstancesList2"],
           "product": "Server",
           "resourceNrns": ["nrn:Server:*:*:*"],
           "resources": [{ "mbrNo": "*", "resource": "*", "region": "*" }],
           "actions": ["View/getServerInstancesList"]
         },
         {
-          "actionNrns": ["nrn:Console:::ProductAccess"],
+          "actionNrns": ["nrn:Console:::ProductAccess", "nrn:Console:::ProductAccess2"],
           "product": "Console",
           "resourceNrns": ["nrn:Console:*:*:Server"],
           "resources": [{ "mbrNo": "*", "resource": "Server", "region": "*" }],
